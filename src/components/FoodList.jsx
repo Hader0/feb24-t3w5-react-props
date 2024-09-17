@@ -1,3 +1,5 @@
+import FoodCard from "./FoodCard";
+
 let foods = [
     "Gnocchi",
     "Toasted Sandwhich",
@@ -12,8 +14,8 @@ export default function FoodList() {
     return (
         <section>
             {
-                foods.map(food => {
-                    return <p>{food}</p>
+                foods.map((food, index) => {
+                    return <FoodCard key={"food-" + index} foodName={food}/>
                 })
             }
         </section>
