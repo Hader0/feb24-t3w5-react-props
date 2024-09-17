@@ -1,4 +1,9 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
 }
 
@@ -15,13 +20,43 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+/* Food Card */
+.FoodCardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+  background-color: darkgrey;
+
+  border-radius: 25px;
+  min-width: 35vw;
+  margin-top: 20px;
+}
+
+.FoodCardHeading {
+  background-color: white;
+  width: fit-content;
+  padding: 0px 10px;
+  border-radius: 20px;
+
+  color: black;
+  font-weight: 700;
+}
+
+.FoodCardDescription {
+  padding: 10px 0px;
 }
 
 .App-link {
